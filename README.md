@@ -1,2 +1,2 @@
 # Lucky-Cuppa-Wordpress-Site
-Wordpress website project for Lucky Cuppa
+Lucky Cuppa's Theme
