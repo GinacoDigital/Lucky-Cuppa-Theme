@@ -1,0 +1,59 @@
+.woocommerce-billing{
+  &-field{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    color: var(--font-checkout-color-100);
+
+    label{
+      color: var(--font-checkout-color-100);
+      margin-bottom: .5rem;
+    }
+
+    input, select{
+      padding-top: .5rem;
+      padding-bottom: .5rem;
+      padding-left: .5rem;
+      width: 100%;
+      border: 1px solid var(--border-checkout-color-100);
+      border-radius: .5rem;
+      font-size: var(--font-body-size-100);
+      color: var(--font-checkout-color-100);
+    }
+
+    select{
+      padding-left: .25rem;
+    }
+
+    abbr{
+      display: none;
+    }
+  }
+
+  &-checkbox{
+    label{
+      display: flex;
+      margin-top: .25rem;
+      gap: .25rem;
+      color: var(--font-checkout-color-100);
+    }
+  }
+
+  &-twice{
+    --tw-grid-columns: 1;
+    --tw-gap: 0;
+
+    display: grid;
+    grid-template-columns: repeat(var(--tw-grid-columns), 1fr);
+    gap: var(--tw-gap);
+  }
+}
+
+@media (min-width: $break-sm){
+  .woocommerce-billing{
+    &-twice{
+      --tw-grid-columns: 2;
+      --tw-gap: 3rem;
+    }
+  }
+}

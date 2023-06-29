@@ -1,0 +1,177 @@
+.advantages{
+  &-list{
+    --tw-grid-columns: 1;
+
+    display: grid;
+    grid-template-columns: repeat(var(--tw-grid-columns), 1fr);
+    gap: var(--card-gap);
+  }
+
+  &-card{
+    --tw-badge-color: var(--badge-main-color-100);
+    
+    display: grid;
+    place-items: center;
+    gap: 1rem;
+    min-width: var(--card-min-width);
+    aspect-ratio: 1 / 1;
+    border-radius: 2rem;
+    background-color: var(--background-main-color-200);
+    transition: .25s ease-in-out;
+    cursor: pointer;
+
+    &:hover{
+      background-color: var(--card-hover-main-color-100);
+      rotate: -5deg;
+      scale: 1.05;
+    }
+
+    & > *{
+      height: 100%;
+    }
+
+    &-badge{
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    &-text{
+      margin-top: .5rem;
+      color: var(--font-main-color-200) !important;
+    }
+
+    &-title{
+      --tw-grid-column: 1;
+
+      grid-column: var(--tw-grid-column);
+      grid-row: 1;
+      background-color: transparent !important;
+      color: var(--font-main-color-100);
+
+      & > span:first-child{
+        display: flex;
+        align-items: flex-end;
+      }
+    }
+  }
+}
+
+@media (min-width: $break-sm){
+  .advantages{
+    &-list{
+      --tw-grid-columns: 2;
+    }
+
+    &-card{
+      &-title{
+        --tw-grid-column: 2;
+      }
+    }
+  }
+}
+
+@media (min-width: $break-xl){
+  .advantages{
+    &-list{
+      --tw-grid-columns: 3;
+    }
+
+    &-card{
+      &-title{
+         --tw-grid-column: 3;
+      }
+    }
+  }
+}
+
+.advantages-animation{
+  .advantages-card{
+    &:nth-child(1){
+      animation: cardRightTopAnimation 1s ease-out;
+    }
+    &:nth-child(2){
+      animation: cardLeftTopAnimation 1s ease-out .5s;
+    }
+    &:nth-child(3){
+      animation: cardMidTopAnimation 1s ease-out 1s;
+    }
+    &:nth-child(4){
+      animation: cardLeftBottomAnimation 1s ease-out 1.5s;
+    }
+    &:nth-child(5){
+      animation: cardMidBottomAnimation 1s ease-out 2s;
+    }
+    &:nth-child(6){
+      animation: cardRightBottomAnimation 1s ease-out 2.5s;
+    }
+  }
+}
+
+@keyframes cardLeftTopAnimation{
+  0%{
+    opacity: 0;
+    translate: -30rem -30rem;
+    rotate: 45deg;
+  }
+  100%{
+    opacity: 1;
+    translate: 0;
+    rotate: 0;
+  }
+}
+@keyframes cardMidTopAnimation{
+  0%{
+    opacity: 0;
+    translate: 0 -40rem;
+  }
+  100%{
+    opacity: 1;
+    translate: 0;
+  }
+}
+@keyframes cardRightTopAnimation{
+  0%{
+    opacity: 0;
+    translate: 30rem -30rem;
+    rotate: -45deg;
+  }
+  100%{
+    opacity: 1;
+    translate: 0;
+    rotate: 0;
+  }
+}
+@keyframes cardLeftBottomAnimation{
+  0%{
+    opacity: 0;
+    translate: -30rem 30rem;
+    rotate: -45deg;
+  }
+  100%{
+    opacity: 1;
+    translate: 0;
+    rotate: 0;
+  }
+}
+@keyframes cardMidBottomAnimation{
+  0%{
+    opacity: 0;
+    translate: 0 40rem;
+  }
+  100%{
+    opacity: 1;
+    translate: 0;
+  }
+}
+@keyframes cardRightBottomAnimation{
+  0%{
+    opacity: 0;
+    translate: 30rem 30rem;
+    rotate: 45deg;
+  }
+  100%{
+    opacity: 1;
+    translate: 0;
+    rotate: 0;
+  }
+}

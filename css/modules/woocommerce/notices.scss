@@ -1,0 +1,64 @@
+.woocommerce-notices{
+  &-wrapper{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    translate: -50% 0;
+    padding: 0 4rem;
+    width: 100%;
+  }
+
+  li, &-notice{
+    position: relative;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    width: 100%;
+    background-color: var(--background-notice-color-100);
+    border-radius: 1rem;
+    font-family: var(--font-family-200);
+    font-size: var(--font-body-size-100);
+    color: var(--font-error-color-100);
+
+    @for $i from 1 to 12{
+      &:nth-child(#{$i}){
+        animation: errorAppears .5s + .75s * $i;
+      }
+    }
+
+    .close-tag{
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin-top: .25rem;
+      margin-right: .5rem;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    strong{
+      font-weight: 400;
+    }
+  }
+
+  &-error{
+    li{
+      background-color: var(--background-notice-color-100);
+    }
+  }
+
+  &-info, &-message{
+    li{
+      background-color: var(--background-notice-color-200);
+    }
+  }
+}
+
+@keyframes errorAppears{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}

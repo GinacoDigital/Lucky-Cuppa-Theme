@@ -1,0 +1,45 @@
+body{
+  --background-main-color-100: rgb(41, 94, 93);
+  --background-main-color-200: rgb(0, 50, 49);
+  --background-main-color-300: rgb(7, 43, 43);
+  --background-main-color-400: rgb(12, 72, 71);
+
+  --background-gradient-main-color-100: var(--background-main-color-400);
+
+  --background-gradient-collection-color-100: rgba(0, 0, 0, .6);
+  --background-gradient-collection-color-200: transparent;
+
+  --background-gradient-hover-collection-color-100: rgba(0, 0, 0, .8);
+
+  --card-hover-main-color-100: rgb(0, 36, 35);
+
+  --border-main-color-200: rgb(10, 58, 57);
+
+  --banner-main-color-100: rgb(255, 226, 125);
+
+  --button-main-color-200: rgb(206, 218, 218);
+  --button-main-color-300: var(--background-main-color-400);
+
+  --button-hover-main-color-200: rgb(187, 199, 199);
+  --button-hover-main-color-300: rgb(10, 56, 55);
+
+  --button-font-color-100: rgb(0, 0, 0);
+  --button-font-color-200: var(--font-main-color-100);
+
+  --font-main-color-100: rgb(255, 255, 255);
+  --font-main-color-200: var(--font-main-color-100);
+  --font-main-color-500: var(--font-main-color-100);
+  --font-main-color-600: var(--font-main-color-100);
+
+  --font-banner-color-100: var(--background-main-color-400);
+  --font-banner-color-200: rgb(64, 64, 64);
+
+  --badge-main-color-100: var(--button-main-color-200);
+  --badge-main-color-200: rgb(7, 43, 43);
+  --badge-main-color-300: var(--font-main-color-100);
+
+  --logo-main-color-100: var(--font-main-color-100);
+  --logo-main-color-200: var(--font-main-color-100);
+  --logo-main-color-300: var(--logo-main-color-100);
+  --logo-main-color-400: var(--logo-main-color-200);
+}

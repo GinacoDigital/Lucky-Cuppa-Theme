@@ -1,0 +1,14 @@
+{
+  "name": "lucky-cuppa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass css/style.scss css/style.css"
+  },
+  "author": "Adam Ceglarz",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

@@ -1,0 +1,61 @@
+#collage{
+  height: auto;
+}
+
+.collage{
+  --collage-x-padding: 6rem;
+
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  max-width: var(--site-max-width);
+  margin-top: 4rem;
+  padding: var(--section-y-padding) var(--collage-x-padding);
+
+  &-item{
+    position: relative;
+    max-width: 50%;
+    min-width: 320px;
+    
+    &:nth-child(1){
+      display: none;
+    }
+
+    &__image{
+      img{
+        border-radius: 1rem;
+      }
+    }
+
+    &-info{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      margin: 1.5rem;
+
+      &__title{
+        color: var(--font-main-color-400);
+      }
+
+      &__button{
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+
+@media (min-width: $break-md){
+  .collage{
+    &-item{
+      &__image{
+        img{
+          border-radius: 0px;
+        }
+      }
+
+      &:nth-child(1){
+        display: block;
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+:root{
+  --background-main-color-100: rgb(255, 255, 255);
+  --background-main-color-200: rgb(235, 235, 235);
+  --background-main-color-300: rgb(224, 216, 208);
+  --background-main-color-400: rgb(240, 240, 240);
+
+  --background-checkout-color-100: rgb(237, 237, 237);
+
+  --background-notice-color-100: rgb(230, 0, 0);
+  --background-notice-color-200: rgb(0, 210, 0);
+
+  --background-gradient-main-color-100: linear-gradient(var(--background-main-color-400), var(--background-main-color-100));
+  
+  --background-gradient-collection-color-100: rgb(64, 64, 64);
+  --background-gradient-collection-color-200: rgb(246, 246, 246);
+
+  --background-gradient-hover-collection-color-100: rgb(50, 50, 50);
+
+  --card-hover-main-color-100: rgb(219, 219, 219);
+
+  --border-main-color-100: rgb(194, 194, 194);
+  --border-main-color-300: rgb(117, 117, 117);
+
+  --border-checkout-color-100: rgb(194, 194, 194);
+  --border-checkout-color-200: rgb(193, 177, 161);
+
+  --banner-main-color-100: rgb(224, 164, 93);
+
+  --button-main-color-100: rgb(255, 226, 125);
+  --button-main-color-200: rgb(215, 235, 189);
+  --button-main-color-300: rgb(255, 226, 125);
+  --button-main-color-400: rgb(99, 60, 21);
+
+  --button-checkout-color-100: rgb(158, 158, 158);
+
+  --button-cart-color-100: var(--background-main-color-300);
+
+  --button-hover-main-color-100: rgb(230, 204, 112);
+  --button-hover-main-color-200: rgb(203, 222, 177);
+  --button-hover-main-color-300: rgb(230, 204, 112);
+  --button-hover-main-color-400: rgb(84, 51, 18);
+
+  --button-hover-checkout-color-100: rgb(143, 143, 143);
+
+  --button-hover-cart-color-100: rgb(209, 202, 194);
+
+  --button-font-color-100: rgb(0, 0, 0);
+  --button-font-color-200: var(--button-font-color-100);
+
+  --font-main-color-100: rgb(64, 64, 64);
+  --font-main-color-200: rgb(94, 124, 53);
+  --font-main-color-300: rgb(255, 42, 42);
+  --font-main-color-400: rgb(245, 245, 245);
+  --font-main-color-500: rgb(97, 97, 97);
+  --font-main-color-600: rgb(0, 0, 0);
+
+  --font-checkout-color-100: rgb(10, 10, 10);
+  --font-checkout-color-200: var(--button-main-color-400);
+
+  --font-error-color-100: var(--font-main-color-400);
+
+  --font-banner-color-100: var(--font-main-color-100);
+  --font-banner-color-200: var(--font-main-color-100);
+
+  --badge-main-color-100: var(--font-main-color-100);
+  --badge-main-color-200: rgb(10, 10, 10);
+  --badge-main-color-300: rgb(64, 64, 64);
+
+  --rating-main-color-100: rgb(17, 24, 38);
+
+  --logo-main-color-100: rgb(140, 198, 63);
+  --logo-main-color-200: rgb(99, 60, 21);
+  --logo-main-color-300: var(--logo-main-color-100);
+  --logo-main-color-400: var(--logo-main-color-200);
+}

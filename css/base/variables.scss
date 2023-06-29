@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Work+Sans:wght@400;500;700&display=swap');
+
+:root{
+  --site-max-width: 1300px;
+
+  --section-x-padding: 4vw;
+  --section-y-padding: 4rem;
+
+  --font-heading-size-100: 48px;
+  --font-heading-size-200: 36px;
+  --font-heading-size-300: 28px;
+  --font-heading-size-400: 20px;
+  --font-body-size-100: 16px;
+  --font-body-size-200: 14px;
+  --font-body-size-300: 12px;
+  --font-body-size-400: 20px;
+  --font-body-size-500: 24px;
+
+  --font-family-100: 'Philosopher', sans-serif;
+  --font-family-200: 'Work Sans', sans-serif;
+
+  --card-min-width: 240px;
+  --card-gap: 2rem;
+}
+
+$break-xs: 0px;
+$break-sm: 576px;
+$break-md: 768px;
+$break-lg: 992px;
+$break-xl: 1200px;
+$break-xxl: 1400px;
+
+@media (min-width: $break-lg){
+  :root{
+    --section-x-padding: 16vw;
+  }
+}
+
+@mixin absoluteCenter{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+}
+
+@mixin flexCenter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

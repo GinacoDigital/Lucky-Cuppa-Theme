@@ -1,0 +1,148 @@
+.product-section{
+  --tw-section-x-padding: 2rem;
+  --tw-grid-columns: 1;
+
+  display: grid;
+  grid-template-columns: repeat(var(--tw-grid-columns), minmax(0, 1fr));
+  gap: 3rem;
+  margin: auto;
+  padding-left: var(--tw-section-x-padding);
+  padding-right: var(--tw-section-x-padding);
+  max-width: var(--site-max-width);
+
+  &-images{
+    grid-column: span 3 / span 3;
+
+    &__image{
+      display: flex;
+      justify-content: center;
+      border: 1px solid var(--border-main-color-300);
+      border-radius: 1rem;
+
+      img{
+        max-height: 480px;
+      }
+    }
+
+    &-gallery{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--card-gap);
+      margin-top: var(--card-gap);
+
+      &__image{
+        border: 1px solid var(--border-main-color-300);
+        border-radius: .5rem;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &-info{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    grid-column: span 3 / span 3;
+
+    &__rating{
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      svg{
+        cursor: pointer;
+      }
+
+      .fill{
+        fill: var(--rating-main-color-100);
+      }
+    }
+
+    &-buttons{
+      .theme-button{
+        width: 100%;
+      }
+
+      &__checkout{
+        background-color: var(--button-main-color-400);
+        border: none;
+
+        span{
+          color: var(--font-main-color-400);
+        }
+        
+        &:hover{
+          background-color: var(--button-hover-main-color-400);
+        }
+      }
+
+      &__cart{
+        display: flex;
+        gap: .5rem;
+        margin-top: .5rem;
+        background-color: transparent;
+        border: 1px solid var(--button-main-color-400);
+
+        &:hover{
+          background-color: transparent;
+
+          svg{
+            animation: cartAnimation .75s ease-in-out;
+          }
+        }
+      }
+    }
+
+    &-details{
+      &__list{
+        list-style-type: disc;
+
+        li{
+          margin-top: .75rem;
+          margin-left: 1.25rem;
+
+          & > div{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+          }
+        }
+      }
+    }
+
+    &-description{
+      &__content{
+        display: block;
+        margin-top: .5rem;
+        line-height: 1.5em;
+      }
+    }
+  }
+}
+
+@keyframes cartAnimation{
+  0%{
+    rotate: 0deg;
+  }
+  25%{
+    rotate: -15deg;
+  }
+  50%{
+    rotate: 15deg;
+  }
+  75%{
+    rotate: -15deg;
+  }
+  100%{
+    rotate: 0deg;
+  }
+}
+
+@media (min-width: $break-lg){
+  .product-section{
+    --tw-grid-columns: 5;
+
+    &-info{
+      grid-column: span 2 / span 2;
+    }
+  }
+}

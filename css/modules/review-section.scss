@@ -1,0 +1,47 @@
+.review-section{
+  max-width: var(--site-max-width);
+  margin: auto;
+
+  &__title{
+    text-align: center;
+  }
+
+  &-comments{
+    display: grid;
+    margin-top: 2rem;
+    gap: 1rem;
+
+    &-item{
+      &-top{
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+      }
+
+      &-mid{
+        display: flex;
+        align-items: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        gap: 1rem;
+
+        &__image{
+          img{
+            max-width: 48px;
+            aspect-ratio: 1 / 1;
+            border-radius: 50%;
+          }
+        }
+      }
+
+      &-bottom{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+
+        &__content{
+          text-wrap: balance;
+        }
+      }
+    }
+  }
+}

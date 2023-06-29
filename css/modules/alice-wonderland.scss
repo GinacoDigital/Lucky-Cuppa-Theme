@@ -1,0 +1,93 @@
+.alice-wonderland{
+  --tw-grid-columns: 2;
+  --tw-section-x-padding: 0;
+  --tw-content-x-padding: 0;
+  --tw-button-x-padding: 5rem;
+
+  display: block;
+  grid-template-columns: repeat(var(--tw-grid-columns), 1fr);
+  padding-left: var(--tw-section-x-padding);
+  padding-right: var(--tw-section-x-padding);
+
+  &-image{
+    max-width: 380px;
+    margin: auto;
+
+    &:nth-child(3){
+      display: none
+    }
+  }
+
+  &-content{
+    
+
+    @include flexCenter;
+    flex-direction: column;
+    gap: .5rem;
+    text-align: center;
+    padding: var(--tw-content-x-padding);
+
+    &__title{
+      color: var(--background-main-color-300);
+    }
+
+    &__button{
+      margin-top: 1rem;
+      padding-left: var(--tw-button-x-padding);
+      padding-right: var(--tw-button-x-padding);
+    }
+  }
+}
+
+@media (min-width: $break-sm){
+  .alice-wonderland{
+    --tw-section-x-padding: 2rem;
+    --tw-content-x-padding: 1rem;
+    --tw-button-x-padding: 3rem;
+
+    display: grid;
+    
+    &-image{
+      max-width: 540px;
+    }
+  }
+}
+
+@media (min-width: $break-md){
+  .alice-wonderland{
+    --tw-section-x-padding: 3rem;
+    --tw-content-x-padding: 3rem;
+    --tw-button-x-padding: 4rem;
+  }
+}
+
+@media (min-width: $break-lg){
+  .alice-wonderland{
+    --tw-section-x-padding: 4rem;
+  }
+}
+
+@media (min-width: $break-xl){
+  .alice-wonderland{
+    --tw-grid-columns: 3;
+    --tw-button-x-padding: 3rem;
+
+    &-image{
+      &:nth-child(3){
+        display: block;
+      }
+    }
+  }
+}
+
+@media (min-width: $break-xxl){
+  .alice-wonderland{
+    --tw-button-x-padding: 4rem;
+  }
+}
+
+@media (min-width: 1500px){
+  .alice-wonderland{
+    --tw-section-x-padding: 4rem;
+  }
+}

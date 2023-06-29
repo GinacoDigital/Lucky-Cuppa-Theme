@@ -1,0 +1,60 @@
+.sherlock-quote{
+  --tw-section-x-padding: 0rem;
+  --tw-translate-x-image: 15vw;
+  --tw-translate-x-steps: -15vw;
+
+  position: relative;
+  display: block;
+  padding-left: var(--tw-section-x-padding);
+  padding-right: var(--tw-section-x-padding);
+  z-index: 0;
+
+  &-content{
+    display: grid;
+  }
+
+  &-image{
+    min-width: $break-sm - 150px;
+    translate: var(--tw-translate-x-image);
+  }
+
+  &-steps{
+    @include absoluteCenter;
+
+    translate: calc(-50% + var(--tw-translate-x-steps)) -50%;
+    min-width: $break-sm;
+    z-index: -1;
+  }
+}
+
+@media (min-width: $break-sm){
+  .sherlock-quote{
+    --tw-section-x-padding: 2rem;
+    --tw-translate-x-image: 5rem;
+  }
+}
+
+@media (min-width: $break-md){
+  .sherlock-quote{
+    --tw-translate-x-image: 3rem;
+
+    display: flex;
+
+    &-steps{
+      translate: -50% -50%;
+    }
+  }
+}
+
+@media (min-width: $break-lg){
+  .sherlock-quote{
+    --tw-section-x-padding: 4rem;
+    --tw-translate-x-image: 0;
+  }
+}
+
+@media (min-width: $break-xxl){
+  .sherlock-quote{
+    --tw-section-x-padding: 6rem;
+  }
+}

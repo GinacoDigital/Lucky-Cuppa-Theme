@@ -1,0 +1,1 @@
+<?php include get_stylesheet_directory().'/woocommerce/checkout/form-checkout.php'; ?>

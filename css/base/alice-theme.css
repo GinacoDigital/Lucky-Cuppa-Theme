@@ -1,0 +1,38 @@
+:root{
+  --background-main-color-100: rgb(125, 221, 255);
+  --background-main-color-200: rgb(125, 221, 255);
+  --background-main-color-300: rgb(75, 133, 153);
+  --background-main-color-400: rgb(229, 248, 255);
+
+  --background-gradient-main-color-100: var(--background-main-color-400);
+
+  --background-gradient-collection-color-100: rgba(0, 0, 0, .6);
+  --background-gradient-collection-color-200: transparent;
+
+  --background-gradient-hover-collection-color-100: rgba(0, 0, 0, .8);
+
+  --card-hover-main-color-100: rgb(117, 207, 240);
+
+  --border-main-color-100: var(--font-main-color-100);
+  --border-main-color-200: rgb(100, 177, 204);
+
+  --banner-main-color-100: rgb(255, 226, 125);
+
+  --button-main-color-200: rgb(229, 248, 255);
+  --button-main-color-300: var(--background-main-color-100);
+
+  --button-hover-main-color-200: rgb(216, 233, 240);
+  --button-hover-main-color-300: rgb(117, 207, 240);
+
+  --font-main-color-200: var(--font-main-color-100);
+  --font-main-color-500: rgb(255, 255, 255);
+  --font-main-color-600: var(--font-main-color-500);
+
+  --badge-main-color-200: var(--background-main-color-100);
+  --badge-main-color-300: var(--font-main-color-500);
+
+  --logo-main-color-100: var(--font-main-color-100);
+  --logo-main-color-200: var(--font-main-color-200);
+  --logo-main-color-300: var(--font-main-color-500);
+  --logo-main-color-400: var(--font-main-color-500);
+}

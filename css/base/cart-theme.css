@@ -1,0 +1,7 @@
+:root{
+  --background-main-color-100: rgb(255, 255, 255);
+
+  --background-gradient-main-color-100: var(--background-main-color-100);
+
+  --border-main-color-200: rgb(176, 176, 176);
+}

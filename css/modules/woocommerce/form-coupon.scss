@@ -1,0 +1,34 @@
+.woocommerce-form-coupon{
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+
+  &__input{
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: .5rem;
+    width: 100%;
+    border: 1px solid var(--border-checkout-color-100);
+    border-radius: .5rem;
+    color: var(--font-checkout-color-100);
+  }
+
+  &__submit{
+    padding-left: .75rem;
+    padding-right: .75rem;
+    background-color: var(--button-checkout-color-100);
+    border: none;
+    border-radius: .5rem;
+    color: var(--font-main-color-400);
+    transition: .2s;
+    cursor: pointer;
+
+    &:hover{
+      background-color: var(--button-hover-checkout-color-100);
+    }
+  }
+
+  .clear{
+    display: none;
+  }
+}

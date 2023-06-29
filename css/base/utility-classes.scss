@@ -1,0 +1,178 @@
+.container{
+  padding: var(--section-y-padding) calc(var(--section-x-padding) / 2);
+  max-width: calc(var(--site-max-width) + var(--section-x-padding));
+  margin: auto;
+}
+
+.theme-button{
+  height: 2rem;
+  width: max-content;
+  padding: 1.25rem 1rem;
+  background-color: var(--button-main-color-100);
+  border-radius: 2rem;
+  transition: .2s;
+  cursor: pointer;
+
+  @include flexCenter;
+
+  &:hover{
+    background-color: var(--button-hover-main-color-100);
+  }
+
+  span{
+    color: var(--button-font-color-100);
+  }
+}
+
+.text-black{
+  color: black;
+}
+
+.absolute{
+  position: absolute;
+}
+
+.relative{
+  position: relative;
+}
+
+.block{
+  display: block;
+}
+
+.flex{
+  display: flex;
+}
+
+.grid{
+  display: grid;
+}
+
+.justify-start{
+  justify-content: flex-start;
+}
+
+.justify-end{
+  justify-content: flex-end;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.justify-between{
+  justify-content: space-between;
+}
+
+.items-center{
+  align-items: center;
+}
+
+.place-center{
+  place-items: center;
+}
+
+.hide{
+  display: none;
+}
+
+.\!hide{
+  display: none !important;
+}
+
+.w-full{
+  width: 100%;
+}
+
+.\!w-full{
+  width: 100% !important;
+}
+
+.gap-2{
+  gap: .5rem;
+}
+
+.gap-4{
+  gap: 1rem;
+}
+
+.m-auto{
+  margin: auto;
+}
+
+.mt-1{
+  margin-top: .25rem;
+}
+
+.mt-2{
+  margin-top: .5rem;
+}
+
+.mt-4{
+  margin-top: 1rem;
+}
+
+.\!mt-8{
+  margin-top: 2rem !important;
+}
+
+.mr-1{
+  margin-right: .25rem;
+}
+
+.px-8{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.py-section{
+  padding-top: var(--section-y-padding);
+  padding-bottom: var(--section-y-padding);
+}
+
+.pb-section{
+  padding-bottom: var(--section-y-padding);
+}
+
+.td-line-through{
+  text-decoration: line-through;
+}
+
+.td-underline{
+  text-decoration: underline;
+}
+
+.uppercase{
+  text-transform: uppercase;
+}
+
+.\!no-background{
+  background: none !important;
+}
+
+.\!card-background{
+  background-color: var(--background-main-color-200) !important;
+}
+
+.opacity-7{
+  opacity: .7;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+.loading-animation{
+  animation: loadingAnimation 1s ease-out;
+}
+
+@keyframes loadingAnimation{
+  from{
+    translate: 0 -50%;
+    opacity: .1;
+  }
+  to{
+    translate: 0;
+    opacity: 1;
+  }
+}
