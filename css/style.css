@@ -430,6 +430,14 @@ main {
   .alice-wonderland {
     --tw-section-x-padding: 4rem; } }
 
+.archive-section {
+  display: grid;
+  gap: 2rem; }
+  .archive-section__title {
+    text-align: center; }
+  .archive-section-posts-list-item {
+    display: grid; }
+
 .category-banner {
   width: 100%;
   max-height: 400px;
@@ -1071,6 +1079,18 @@ footer {
 @media (min-width: 768px) {
   .page-banner-content {
     --tw-content-max-width: 40vw; } }
+
+.page-section {
+  display: grid;
+  gap: 2rem; }
+  .page-section__title {
+    text-align: center; }
+  .page-section__content span {
+    display: grid; }
+    .page-section__content span h1, .page-section__content span h2, .page-section__content span h3, .page-section__content span h4, .page-section__content span h5 {
+      margin-top: 1rem; }
+    .page-section__content span p {
+      margin-top: .5rem; }
 
 .product-section {
   --tw-section-x-padding: 2rem;
