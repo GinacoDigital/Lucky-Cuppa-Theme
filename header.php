@@ -48,6 +48,8 @@
         ">
           <span><?php include get_stylesheet_directory().'/img/svg/account.svg'; ?></span>
         </a>
+      </li>
+      <li>
         <a href="<?php echo wc_get_cart_url(); ?>">
           <span><?php include get_stylesheet_directory().'/img/svg/cart.svg'; ?></span>
         </a>
