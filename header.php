@@ -36,6 +36,18 @@
     </ul>
     <ul class="header-section-list header-section-icons">
       <li>
+        <a href="
+          <?php
+            if(is_user_logged_in()){
+              echo get_permalink(get_option('woocommerce_myaccount_page_id'));
+            }
+            else{
+              echo wp_login_url();
+            }
+          ?>
+        ">
+          <span><?php include get_stylesheet_directory().'/img/svg/account.svg'; ?></span>
+        </a>
         <a href="<?php echo wc_get_cart_url(); ?>">
           <span><?php include get_stylesheet_directory().'/img/svg/cart.svg'; ?></span>
         </a>
